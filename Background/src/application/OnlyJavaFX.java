@@ -30,6 +30,7 @@ public class OnlyJavaFX extends Application {
 		    //File(String pathname)
 		    //https://docs.oracle.com/javase/8/docs/api/java/io/File.html
 		    File file = new File("./src/application/resources/black_clock.png");
+		    System.out.println("Ovo je proba.");
 		    
 		    //Image(InputStream is)
 		    //https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/Image.html
