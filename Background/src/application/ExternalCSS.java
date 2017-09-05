@@ -29,12 +29,12 @@ import javafx.scene.layout.BorderPane;
 				    
 				    Scene scene = new Scene(borderPane, 600, 600);
 				    
-				    URL path = getClass().getResource("resourcesa/BackgroundStyle.css");
+				    URL path = getClass().getResource("resources/BackgroundStyle.css");
 				    
 				    if(path != null) {
 				    	scene.getStylesheets().add(path.toExternalForm());
 				    } else {
-				    	scene.getStylesheets().add("https://raw.githubusercontent.com/4nds/CenteredBackgroundImage/master/Background/src/application/resources/BackgroundStyle.css");
+				    	scene.getStylesheets().add("https://raw.githubusercontent.com/4nds/CenteredBackgroundImage/master/Background/src/application/resources/BackgroundStyleExternalURL.css");
 				    }
 				    				    
 				    borderPane.setId("background_id");
