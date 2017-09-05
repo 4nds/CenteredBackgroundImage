@@ -1,9 +1,9 @@
 package application;
 	
+
 import java.io.File;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -14,7 +14,6 @@ import javafx.scene.layout.BackgroundPosition;
 import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
 
 
 public class OnlyJavaFX extends Application {
@@ -29,13 +28,19 @@ public class OnlyJavaFX extends Application {
 				    
 		    //File(String pathname)
 		    //https://docs.oracle.com/javase/8/docs/api/java/io/File.html
-		    File file = new File("./src/application/resources/black_clock.png");
-		    System.out.println("Ovo je proba.");
+		    File file = new File("./src/application/resourcesa/black_clock.png");
 		    
-		    //Image(InputStream is)
-		    //https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/Image.html
-		    Image img = new Image(file.getAbsoluteFile().toURI().toString());
-		    		
+		    Image img = null;
+		    if(file.exists()) {
+		    	//Image(InputStream is)
+			    //https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/Image.html
+			    img = new Image(file.getAbsoluteFile().toURI().toString());
+		    } else {
+		    	//Image(String url)
+			    //https://docs.oracle.com/javase/8/javafx/api/javafx/scene/image/Image.html
+			    img = new Image("https://raw.githubusercontent.com/4nds/CenteredBackgroundImage/master/Background/src/application/resources/black_clock.png");
+		    }
+		    	
 		    //BackgroundSize(double width, double height, boolean widthAsPercentage, boolean heightAsPercentage, boolean contain, boolean cover)
 		    //https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/BackgroundSize.html
 		    BackgroundSize bgSize = new BackgroundSize(0, 0, false, false, false, true);
