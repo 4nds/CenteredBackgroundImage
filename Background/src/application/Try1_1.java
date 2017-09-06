@@ -14,13 +14,14 @@ import javafx.scene.layout.BorderPane;
 
 public class Try1_1 extends Application {
 	
-    private ImageView background = new ImageView(img);
-
+    //private ImageView background = new ImageView(img);
+    private ImageView background = new ImageView();
+    /*
     private void windowResized(){
         double newHeight = scene.getHeight();
         double newWidth = scene.getWidth();
     }
-
+    
     private void centerBackgroundImage(double width, double height) {
             double translateX = width/2 - img.getWidth()/2;
             System.out.println(translateX);
@@ -30,6 +31,7 @@ public class Try1_1 extends Application {
             System.out.println(translateY);
             background.setTranslateY(translateY);
     }
+    */
 
     @Override
     public void start(Stage primaryStage) {
@@ -63,7 +65,7 @@ public class Try1_1 extends Application {
             background.setImage(img);
 
             //..center the background
-            centerBackgroundImage(width, height);
+            //centerBackgroundImage(width, height);
 
             //Button(String text)
             //https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Button.html
@@ -76,10 +78,12 @@ public class Try1_1 extends Application {
             Group root = new Group (background, borderPane);
 
             Scene scene = new Scene(root, width, height);
-
+            
+            /*
             //add callbacks to handle window resize
             scene.heightProperty().addListener(windowHeightResized);
-            scene.widthProperty().addListener(windowWidthResized);        
+            scene.widthProperty().addListener(windowWidthResized);  
+            */      
 
             primaryStage.setScene(scene);
 

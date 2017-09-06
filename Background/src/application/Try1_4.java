@@ -66,8 +66,7 @@ public class Try1_4 extends Application {
     }
     
     
-    private void centerBackgroundImage(double width, double height) {
-    	
+    private void centerBackgroundImage(double width, double height) {	
 	    	if (scene.getWidth()/img.getWidth() > scene.getHeight()/img.getHeight()) {
 	    		background.setFitWidth(scene.getWidth());
 	    		background.setFitHeight(scene.getWidth()/img.getWidth()*img.getHeight()); 		
@@ -79,17 +78,6 @@ public class Try1_4 extends Application {
 	    		background.setTranslateX(-(background.getFitWidth()-scene.getWidth())/2);
 	    		background.setTranslateY(0);
 	    	}
-	    	/*
-	    	System.out.println(width);
-    	
-            double translateX = width/2 - img.getWidth()/2;
-            System.out.println(translateX);
-            background.setTranslateX(translateX);
-
-            double translateY = height/2 - img.getHeight()/2;
-            System.out.println(translateY);
-            background.setTranslateY(translateY);
-            */
     }
 
     @Override

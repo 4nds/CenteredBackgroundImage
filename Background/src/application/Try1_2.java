@@ -17,11 +17,12 @@ public class Try1_2 extends Application {
 	
 	private ImageView background = new ImageView();
 	
-	
+	/*
     private void windowResized(){
         double newHeight = scene.getHeight();
         double newWidth = scene.getWidth();
     }
+    */
     
 
 	
@@ -83,9 +84,11 @@ public class Try1_2 extends Application {
 
             Scene scene = new Scene(root, width, height);
 
+            /*
             //add callbacks to handle window resize
             scene.heightProperty().addListener(windowHeightResized);
-            scene.widthProperty().addListener(windowWidthResized);        
+            scene.widthProperty().addListener(windowWidthResized);  
+            */      
 
             primaryStage.setScene(scene);
 
