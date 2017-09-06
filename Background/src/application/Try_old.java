@@ -23,7 +23,7 @@ import javafx.scene.layout.BackgroundSize;
 import javafx.scene.layout.BorderPane;
 
 
-public class Solution1 extends Application {
+public class Try_old extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {

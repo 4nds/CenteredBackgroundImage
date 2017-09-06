@@ -36,7 +36,6 @@ import javafx.scene.layout.BorderPane;
 				    	image = path.toExternalForm();
 				    } else {
 				    	image = "https://raw.githubusercontent.com/4nds/CenteredBackgroundImage/master/Background/src/application/resources/black_clock.png";
-				    	
 				    }				    
 				    
 				    borderPane.setStyle("-fx-background-image: url('" + image + "'); " +
